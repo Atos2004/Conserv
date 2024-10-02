@@ -1,0 +1,93 @@
+body {
+    color: white;
+    
+
+}
+
+.box-info{ 
+width: 100%;
+margin-top: 20px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+text-align: center;
+color: white;
+
+
+}
+
+.box-info-single{
+width: 30%;
+border-radius: 15px;
+padding: 20px;
+cursor: pointer;
+transition: transform 0.2s;
+
+}
+
+.box-info-single:hover{
+transform: scale(1.1);
+
+}
+
+.chart-container {
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative; /* O contêiner é relativo para posicionar o gráfico especial */
+}
+
+.chart {
+margin: 20px; /* Espaço ao redor de cada gráfico */
+padding: 20px; /* Espaço interno de cada gráfico */
+background-color: #fff; /* Cor de fundo do gráfico */
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Sombras */
+border-radius: 8px; /* Bordas arredondadas */
+}
+
+.special-chart {
+
+box-shadow: 0 4px 8px 0 rgba(0, 0, 255, 0.2), 0 6px 20px 0 rgba(0, 0, 255, 0.19); /* Sombras especiais */
+position: absolute; /* Posicionamento absoluto */
+right: 0; /* Alinhado à direita do contêiner */
+margin: 20px; /* Margem para afastar do canto */
+}
+
+
+@media screen and (max-width:1020px) {
+
+.box-info{ 
+flex-direction: column;
+
+
+}
+
+.box-info-single{
+width: 90%;
+border-radius: 15px;
+padding: 10px;
+cursor: pointer;
+transition: transform 0.2s;
+margin: 8px 0;
+
+}
+
+.d.flex {
+        display: none !important;
+    }
+
+    .chart-container {
+flex-direction: column; /* Muda a direção para coluna no modo responsivo */
+align-items: stretch; /* Estica os itens para ocupar a largura total */
+}
+
+.chart, .special-chart {
+flex: 1 1 100%; /* Gráficos ocupam 100% da largura no modo responsivo */
+max-width: 100%;
+margin: 10px 0; /* Espaçamento vertical entre os gráficos */
+position: relative; /* Redefine o posicionamento no modo responsivo */
+right: auto; /* Remove o alinhamento à direita */
+}
+
+}
+

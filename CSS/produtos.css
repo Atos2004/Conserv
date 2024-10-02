@@ -1,0 +1,98 @@
+body {
+    background: linear-gradient(to right, rgb(34, 35, 41), rgb(58, 61, 63));
+  }
+
+  #table-bg{
+    background: rgba(0, 0, 0, 1);
+    border-radius: 15px;
+  }
+
+  .button{
+    position: absolute;
+    left: 79%;
+    top: 18%;
+    color: white;
+    
+  }
+
+  .button a {
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+  }
+
+  button {
+    background-color: slategrey;
+    color: white;
+    border-radius: 15px;
+    text-decoration: none;
+  }
+
+  .status-circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.status-on {
+  background-color: black;
+}
+.status-off {
+  background-color: orange;
+}
+
+@media screen and (max-width:1020px) {
+
+
+
+thead{
+  display: none;
+}
+
+td{
+  display: block;
+}
+
+td::before{
+  content: attr(data-th) ":     ";
+  font-weight: bold;
+}
+
+td.no-header::before {
+  content: none;
+}
+
+.button{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 63%;
+  top: 12%;
+  width: 100%;
+}
+
+.d.flex {
+          display: none !important;
+      }
+
+.button{
+  display: none;
+}
+
+.button a{
+  display: none;
+}
+
+/* Estilo para a div que contém os botões */
+.button-container {
+display: flex;
+justify-content: space-between; /* Distribui os itens com espaço entre eles */
+align-items: center;
+}
+
+.button-container .btn-danger {
+margin-left: auto; /* Move o botão btn-danger para a direita */
+}
+
+
+}
+
